@@ -1,0 +1,157 @@
+/* General styles */
+body {
+  font-family: 'Fira Code';
+  color: #fff;
+  margin: 0;
+  background: #282057; /* Changer la couleur du fond en bleu */
+  min-height: 100vh;
+  position: relative; /* Ajout pour positionner l'avatar absolument par rapport au body */
+}
+
+/* Header & Navigation styles */
+header {
+  display: flex; /* Ajout pour aligner le logo et le menu de navigation */
+  justify-content: space-between; /* Espace entre le logo et le menu */
+  align-items: center; /* Centrer verticalement le contenu */
+  padding: 10px 20px;
+  background-color: #1a172b; /* Ajouter une couleur de fond au header */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Ajouter cette ligne pour supprimer la marge par défaut */
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 30px;
+}
+
+nav ul li a {
+  color: #919090;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+/* Logo styles */
+#logo {
+  height: 50px; /* Ajustez la taille du logo selon vos besoins */
+}
+
+/* Section styles */
+section {
+  padding: 20px;
+  text-align: left; /* Modifier le texte à gauche */
+  max-width: 50%; /* Limiter la largeur du texte */
+}
+
+h1 {
+  font-size: 3em; /* Réduire la taille des titres */
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+p {
+  margin-top: 30px;
+  font-size: 2em; /* Réduire la taille du texte */
+  font-weight: 100;
+  color: rgb(163, 163, 163);
+}
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 48px;
+  display: flex; /* Ajout pour aligner l'avatar avec le texte */
+  justify-content: flex-start; /* Ajout pour aligner l'avatar avec le texte */
+  align-items: center; /* Ajout pour aligner l'avatar avec le texte */
+}
+
+.gradient-text {
+  background-image: linear-gradient(-45deg, rgb(177, 8, 189), rgb(88, 186, 255));
+  background-clip: text;
+  color: transparent;
+}
+
+#avatar-container {
+  position: absolute; /* Positionner l'avatar absolument */
+  top: 40px; /* Ajuster la position en haut */
+  right: 20px; /* Ajuster la position à droite */
+  height: 300px; /* Taille de l'avatar */
+}
+
+#avatar-loading {
+  font-size: 2em; /* Réduire la taille de la police du chargement de l'avatar */
+}
+
+.experience-cv-container {
+  background: #2c2541; /* Background color for the container */
+  padding: 40px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#experience {
+  margin-bottom: 40px;
+  flex: 1 1 100%; /* Modifier pour occuper toute la largeur */
+}
+
+#cv {
+  flex: 1 1 100%; /* Modifier pour occuper toute la largeur */
+}
+
+#experience h2,
+#cv h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.experience-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px; /* Augmenter l'espace entre les éléments */
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px; /* Ajouter un espace en bas des éléments */
+  flex: 1 1 calc(50% - 20px); /* Ajuster la largeur des éléments */
+}
+
+.experience-item h3 {
+  font-size: 2em;
+  font-weight: 500;
+  color: #ffc107;
+}
+
+.experience-item p {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #ddd;
+  margin: 5px 0;
+}
+
+.cv-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(-45deg, rgb(177, 8, 189), rgb(88, 186, 255));
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cv-button:hover {
+  background: linear-gradient(-45deg, rgb(88, 186, 255), rgb(177, 8, 189));
+}
